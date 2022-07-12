@@ -1,9 +1,5 @@
 # clinic-db
-
-
-
-
-
+Based on a database diagram about a clinic, we are working in pair programming to interpret it and implement the necessary SQL to build that database.
 ## Authors
 
 👤 **Rafael Guzman**
