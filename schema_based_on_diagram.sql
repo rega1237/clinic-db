@@ -57,3 +57,13 @@ ADD FOREIGN KEY (patient_id) REFERENCES patients(id);
 
 ALTER TABLE invoices
 ADD FOREIGN KEY (medical_history__id) REFERENCES medical_histories(id);
+
+-- Create relationship one to many between invoices table with invoices items
+
+ALTER TABLE invoice_items
+ADD FOREIGN KEY (invoice_id) REFERENCES invoices(id);
+
+-- Create relationship one to many between treatment table with invoices items
+
+ALTER TABLE invoice_items
+ADD FOREIGN KEY (treatment_id) REFERENCES treatments(id);
